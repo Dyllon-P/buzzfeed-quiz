@@ -1,12 +1,51 @@
 <html>
-    <head>
-        <title>Welcome!</title>
-    </head>
+     <style>
+       .center {
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+        .ques{
+            color: white;
+            text-align: center;
+        }
+    </style>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
+        <body style = "background-color:#eda63a;">
+     <img class = "center" src = "https://tvseriesfinale.com/wp-content/uploads/2018/09/FamilyGuy_FamilyJump_2019_R6Flat_hires2-768x523.jpg" />
+     <h1 class = "ques"> Which Family Guy character are you? </h1>
+
+        <form method = "post" action = "/results">
+            <p>
+            <!-- +1 Meg -->
+            Does everyone hate you? (Y/N)
+            <input type="text" name="q1" placeholder="Does everyone hate you? (Y/N)"/>
+            </p>
+            <p>
+            <!-- +1 Stewie -->
+            Are you a dog whisperer? (Y/N)
+            <input type="text" name="q2" placeholder="Are you a dog whisperer? (Y/N)"/>
+            </p>
+            <!-- +1 Peter -->
+            Are you lazy? (Y/N)
+            <input type="text" name="q3" placeholder="Are you lazy? (Y/N)"/>
+            </p>
+            <p>
+            <!-- +1 stewie -->
+            Are you evil? (Y/N)
+            <input type="text" name="q4" placeholder="Are you evil? (Y/N)"/>
+            </p>
+            <p>
+            <!-- +1 Brian -->
+            Do you love long walks in the park? (Y/N)
+            <input type="text" name="q5" placeholder="Do you love long walks in the park? (Y/N)"/>
+            </p>
+            <p>
+            <!-- +1 Chris -->
+            Do you have an evil monkey in your closet? (Y/N)
+            <input type="text" name="q6" placeholder="Do you have an evil monkey in your closet? (Y/N)"/>
+            </p>
             <input type="submit" value="Submit"/>
         </form>
     </body>
